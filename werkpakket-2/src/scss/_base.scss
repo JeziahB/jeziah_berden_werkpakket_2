@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+$color-blue: rgb(0,140,255);
+$color-text: #ffffff;
+$color-dark: #121212;
+$color-lightbackgr: #eeeeee;
+
+
+
+
+
+
+
+body {
+  background-color: $color-dark;
+
+  h1 {
+    font-family: 'Inter', sans-serif;
+    color: $color-text;
+  }
+  h2 {
+    font-family: 'Inter', sans-serif;
+    color: $color-text;
+  }
+  p {
+    font-family: 'Inter', sans-serif;
+    color: $color-text;
+  }
+  ul li {
+    font-family: 'Inter', sans-serif;
+    color: $color-text;
+  }
+  main {
+
+    margin: 2rem auto 0 auto;
+  }
+}
+footer {
+  width: 100%;
+}

@@ -1,0 +1,87 @@
+@use '_base' as *;
+
+
+body {
+  background-color: $color-dark;
+  color: $color-text;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+
+  .form {
+    margin: 2rem auto 0 auto;
+    width: 60%;
+    padding: 10rem 0 10rem 0;
+    border-radius: 1rem;
+
+    .form_veld {
+      display: flex;
+      margin: 14px;
+
+      input {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+
+  }
+
+  .login {
+    input {
+      color: $color-text;
+      border-radius: 0.25rem;
+      padding: 16px;
+
+      background-color: #363636;
+    }
+  }
+
+  .arrow-left {
+    display: block;
+    margin: 30px 0 0 2rem;
+    width: 25px;
+    height: 25px;
+    border-top: 4px solid $color-text;
+    border-left: 4px solid $color-text;
+    transform: rotate(-45deg);
+  }
+
+  .text_center {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  a {
+    color: $color-blue;
+  }
+  #forgot_password {
+    text-decoration: underline;
+  }
+  .login input[type='submit'] {
+    background-color: $color-blue;
+    color: $color-dark;
+    font-weight: 700;
+
+  }
+
+}
+//
+//.detail {
+//  background: rgba(255, 255, 255, 0.11);
+//  border-radius: 16px;
+//  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+//  backdrop-filter: blur(9.4px);
+//  -webkit-backdrop-filter: blur(9.4px);
+//  border: 1px solid rgba(255, 255, 255, 0.4);
+//  width: 20%;
+//  height: 300px;
+//  margin: 1rem auto;
+//}
+
+@media screen and (max-width: 1000px)  {
+  body {
+
+
+    .form {
+      width: 80%;
+    }
+    }
+}

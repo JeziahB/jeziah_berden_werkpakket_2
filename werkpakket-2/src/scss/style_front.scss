@@ -1,0 +1,203 @@
+@use '_base' as *;
+
+#homepage {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+.front_landing{
+
+  h1 {
+    font-size: 100px;
+    color: $color-text;
+    box-shadow: inset 0 0 0 0 $color-blue;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+
+    &:hover {
+      box-shadow: inset 0 -200px 0 0  $color-blue;
+      color: $color-text ;
+  }
+  }
+  h2 {
+    font-size: 40px;
+    color: $color-text;
+    font-weight: lighter;
+  }
+  ul li {
+    font-size: 25px;
+    margin: 2rem;
+  }
+
+  #readmore {
+    width: 20%;
+    font-size: 20px;
+    margin: 3rem ;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    &:hover {
+      color: $color-blue;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  .shadow__btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: $color-text;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: $color-blue;
+    box-shadow: 0 0 25px $color-blue;
+
+    &:hover {
+      box-shadow: 0 0 5px $color-blue,
+      0 0 25px $color-blue,
+      0 0 50px $color-blue,
+      0 0 100px $color-blue;
+    }
+  }
+}
+.mainimg {
+  float: right;
+  width: 40%;
+  height: auto;
+  img {
+    width: 90%;
+    height: auto;
+    margin: 0 0 0 20rem;
+  }
+}
+
+hr {
+  width: 80%;
+  margin: 5rem auto;
+  border: 1px solid $color-text;
+}
+
+
+#uitleg {
+
+  display: flex;
+  width: 80%;
+  margin: 0 auto 5rem auto;
+  .detail {
+    background: $color-dark, 0.11;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px $color-dark, 0.1;
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid $color-text, 0.4;
+    width: 20%;
+    height: 300px;
+    margin: 1rem auto;
+    h2 {
+      font-size: 40px;
+      margin: 1rem;
+    }
+    p {
+      font-size: 17px;
+      margin: 1rem;
+    }
+  }
+
+}
+footer {
+  width: 100%;
+  background-color: #050505;
+  margin: 0;
+  .\=footertekst {
+    padding: 5rem 0 5rem 0 ;
+    width: 60%;
+    margin: 0 20rem;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  #homepage {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .mainimg {
+    width: 0;
+  }
+  #uitleg {
+    flex-direction: column;
+
+    .detail {
+      width: 80%;
+      height: 200px;
+    }
+
+    p {
+      font-size: 35px;
+    }
+  }
+  .front_landing {
+
+    h1 {
+      font-size: 60px;
+      color: $color-text;
+      box-shadow: inset 0 0 0 0 $color-blue;
+      transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+
+      &:hover {
+        box-shadow: inset 0 -200px 0 0 $color-blue;
+        color: $color-text;
+      }
+    }
+
+    h2 {
+      font-size: 40px;
+
+    }
+
+    p {
+      font-size: 23px;
+    }
+
+    #readmore {
+      width: 40%;
+
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 500px) {
+  #homepage {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .front_landing{
+    width: 100%;
+    .shadow__btn {
+
+      padding: 10px 20px;
+      border: none;
+      font-size: 17px;
+      color: $color-text;
+      border-radius: 7px;
+      letter-spacing: 4px;
+      font-weight: 700;
+
+    }
+    #readmore {
+      width: 100%;
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+
+
+}

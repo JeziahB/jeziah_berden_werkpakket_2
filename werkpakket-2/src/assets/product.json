@@ -1,0 +1,98 @@
+
+{
+"producten": [
+  {
+  "cardId": 1,
+  "titel": "Rock Assistant1",
+  "omschrijving": "The Classic Rock Assistant1",
+  "afbeelding": "/src/assets/images/showcase.png",
+  "prijs": 250,
+  "btwTarief": 2,
+  "stock": 5,
+    "quantity": 0
+  },
+  {
+    "cardId": 2,
+    "titel": "Rock Assistant2",
+    "omschrijving": "The Classic Rock Assistant2",
+    "afbeelding": "/src/assets/images/showcase.png",
+    "prijs": 250,
+    "btwTarief": 2,
+    "stock": 14,
+    "quantity": 0
+  },
+  {
+    "cardId": 3,
+    "titel": "Rock Assistant3",
+    "omschrijving": "The Classic Rock Assistant3",
+    "afbeelding": "/src/assets/images/showcase.png",
+    "prijs": 250,
+    "btwTarief": 2,
+    "stock": 12,
+    "quantity": 0
+  },
+  {
+    "cardId": 4,
+    "titel": "Rock Assistant4",
+    "omschrijving": "The Classic Rock Assistant4",
+    "afbeelding": "/src/assets/images/showcase.png",
+    "prijs": 250,
+    "btwTarief": 2,
+    "stock": 2,
+    "quantity": 0
+  },
+  {
+    "cardId": 5,
+    "titel": "Rock Assistant5",
+    "omschrijving": "The Classic Rock Assistant5",
+    "afbeelding": "/src/assets/images/showcase.png",
+    "prijs": 250,
+    "btwTarief": 2,
+    "stock": 45,
+    "quantity": 0
+  },
+  {
+    "cardId": 6,
+    "titel": "Rock Assistant6",
+    "omschrijving": "The Classic Rock Assistant6",
+    "afbeelding": "/src/assets/images/showcase.png",
+    "prijs": 250,
+    "btwTarief": 2,
+    "stock": 80,
+    "quantity": 0
+  },
+  {
+    "cardId": 7,
+    "titel": "Rock Assistant7",
+    "omschrijving": "The Classic Rock Assistant7",
+    "afbeelding": "/src/assets/images/showcase.png",
+    "prijs": 250,
+    "btwTarief": 2,
+    "stock": 11,
+    "quantity": 0
+  },
+  {
+    "cardId": 8,
+    "titel": "Rock Assistant8",
+    "omschrijving": "The Classic Rock Assistant8",
+    "afbeelding": "/src/assets/images/showcase.png",
+    "prijs": 250,
+    "btwTarief": 2,
+    "stock": 5,
+    "quantity": 0
+  },
+  {
+    "cardId": 9,
+    "titel": "Rock Assistant9",
+    "omschrijving": "The Classic Rock 9",
+    "afbeelding": "/src/assets/images/showcase.png",
+    "prijs": 250,
+    "btwTarief": 2,
+    "stock": 25,
+    "quantity": 0
+  },
+  {
+
+  }
+]
+}
