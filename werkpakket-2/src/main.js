@@ -13,8 +13,8 @@ app.use(pinia)
 app.component('Login', Login)
 app.use(router);
 
- const productenStore = useProductenStore();
- productenStore.setProducten();
+ // const productenStore = useProductenStore();
+ // productenStore.setProducten();
 
 
 app.mount('#app')

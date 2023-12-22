@@ -1,98 +1,172 @@
 
-{
-"producten": [
+
+[
   {
   "cardId": 1,
-  "titel": "Rock Assistant1",
-  "omschrijving": "The Classic Rock Assistant1",
-  "afbeelding": "/src/assets/images/showcase.png",
-  "prijs": 250,
-  "btwTarief": 2,
+  "titel": "Rock Assistant v1 black",
+  "omschrijving": "The Classic Rock Assistant in beautiful matte black",
+  "afbeelding": "/src/assets/images/showcase_black.png",
+  "prijs": 99.99,
+  "btwTarief": 21,
   "stock": 5,
-    "quantity": 0
+    "quantity": 0,
+    "categorie": "full_product",
+    "kleur": "zwart"
   },
   {
     "cardId": 2,
-    "titel": "Rock Assistant2",
-    "omschrijving": "The Classic Rock Assistant2",
-    "afbeelding": "/src/assets/images/showcase.png",
-    "prijs": 250,
-    "btwTarief": 2,
+    "titel": "Rock Assistant v1 board",
+    "omschrijving": "The board for in your Rock Assistant v1",
+    "afbeelding": "/src/assets/images/board.png",
+    "prijs": 75.99,
+    "btwTarief": 21,
     "stock": 14,
-    "quantity": 0
+    "quantity": 0,
+    "categorie": "component",
+    "kleur": ""
   },
   {
     "cardId": 3,
-    "titel": "Rock Assistant3",
-    "omschrijving": "The Classic Rock Assistant3",
+    "titel": "Rock Assistant v1 gray",
+    "omschrijving": "The Classic Rock Assistant in it's original color",
     "afbeelding": "/src/assets/images/showcase.png",
-    "prijs": 250,
-    "btwTarief": 2,
+    "prijs": 99.99,
+    "btwTarief": 21,
     "stock": 12,
-    "quantity": 0
+    "quantity": 0,
+    "categorie": "full_product",
+    "kleur": "grijs"
   },
   {
     "cardId": 4,
-    "titel": "Rock Assistant4",
-    "omschrijving": "The Classic Rock Assistant4",
-    "afbeelding": "/src/assets/images/showcase.png",
-    "prijs": 250,
-    "btwTarief": 2,
+    "titel": "Rock Assistant v1 red",
+    "omschrijving": "The Classic Rock Assistant in fancy red",
+    "afbeelding": "/src/assets/images/showcase_red.png",
+    "prijs": 99.99,
+    "btwTarief": 21,
     "stock": 2,
-    "quantity": 0
+    "quantity": 0,
+    "categorie": "full_product",
+    "kleur": "rood"
   },
   {
     "cardId": 5,
-    "titel": "Rock Assistant5",
-    "omschrijving": "The Classic Rock Assistant5",
-    "afbeelding": "/src/assets/images/showcase.png",
-    "prijs": 250,
-    "btwTarief": 2,
+    "titel": "Rock Assistant casing cyan",
+    "omschrijving": "The casing you need for your Rock Assistant in beautiful blue!",
+    "afbeelding": "/src/assets/images/bovenkant_cyan.png",
+    "prijs": 25.99,
+    "btwTarief": 21,
     "stock": 45,
-    "quantity": 0
+    "quantity": 0,
+    "categorie": "component",
+    "kleur": "blauw"
   },
   {
     "cardId": 6,
-    "titel": "Rock Assistant6",
-    "omschrijving": "The Classic Rock Assistant6",
-    "afbeelding": "/src/assets/images/showcase.png",
-    "prijs": 250,
-    "btwTarief": 2,
+    "titel": "Rock Assistant v1 cyan",
+    "omschrijving": "The Classic Rock Assistant in shiny cyan",
+    "afbeelding": "/src/assets/images/showcase_cyan.png",
+    "prijs": 99.99,
+    "btwTarief": 21,
     "stock": 80,
-    "quantity": 0
+    "quantity": 0,
+    "categorie": "full_product",
+    "kleur": "blauw"
   },
   {
     "cardId": 7,
-    "titel": "Rock Assistant7",
-    "omschrijving": "The Classic Rock Assistant7",
-    "afbeelding": "/src/assets/images/showcase.png",
-    "prijs": 250,
-    "btwTarief": 2,
+    "titel": "Rock Assistant casing red",
+    "omschrijving": "The red casing for your Rock Assistant v1",
+    "afbeelding": "/src/assets/images/bovenkant_red.png",
+    "prijs": 25.99,
+    "btwTarief": 21,
     "stock": 11,
-    "quantity": 0
+    "quantity": 0,
+    "categorie": "component",
+    "kleur": "rood"
   },
   {
     "cardId": 8,
-    "titel": "Rock Assistant8",
-    "omschrijving": "The Classic Rock Assistant8",
-    "afbeelding": "/src/assets/images/showcase.png",
-    "prijs": 250,
-    "btwTarief": 2,
+    "titel": "Rock Assistant v2 red",
+    "omschrijving": "The new updated Rock Assistant v2 in the same fancy red",
+    "afbeelding": "/src/assets/images/showcase_red.png",
+    "prijs": 115.99,
+    "btwTarief": 21,
     "stock": 5,
-    "quantity": 0
+    "quantity": 0,
+    "categorie": "full_product",
+    "kleur": "rood"
   },
   {
     "cardId": 9,
-    "titel": "Rock Assistant9",
-    "omschrijving": "The Classic Rock 9",
+    "titel": "Rock Assistant v2 gray",
+    "omschrijving": "The new updated Rock Assistant v2 but in it's classic gray",
     "afbeelding": "/src/assets/images/showcase.png",
-    "prijs": 250,
-    "btwTarief": 2,
+    "prijs": 115.99,
+    "btwTarief": 21,
     "stock": 25,
-    "quantity": 0
+    "quantity": 0,
+    "categorie": "full_product",
+    "kleur": "grijs"
   },
   {
-
+    "cardId": 10,
+    "titel": "Rock Assistant casing gray",
+    "omschrijving": "The Classic Rock Assistant color: gray!",
+    "afbeelding": "/src/assets/images/bovenkant.png",
+    "prijs": 25.99,
+    "btwTarief": 21,
+    "stock": 14,
+    "quantity": 0,
+    "categorie": "component",
+    "kleur": "grijs"
+  },
+  {
+    "cardId": 11,
+    "titel": "Rock Assistant v2 black",
+    "omschrijving": "The new updated Rock Assistant v2 in clean matte black",
+    "afbeelding": "/src/assets/images/showcase_black.png",
+    "prijs": 115.99,
+    "btwTarief": 21,
+    "stock": 14,
+    "quantity": 0,
+    "categorie": "full_product",
+    "kleur": "zwart"
+  },
+  {
+    "cardId": 12,
+    "titel": "Rock Assistant v2 cyan",
+    "omschrijving": "The new updated Rock Assistant v2 in clean beautiful blue",
+    "afbeelding": "/src/assets/images/showcase_cyan.png",
+    "prijs": 115.99,
+    "btwTarief": 21,
+    "stock": 14,
+    "quantity": 0,
+    "categorie": "full_product",
+    "kleur": "blauw"
+  },
+  {
+    "cardId": 13,
+    "titel": "Rock Assistant v2 board",
+    "omschrijving": "The new updated Rock Assistant v2 board",
+    "afbeelding": "/src/assets/images/board2.png",
+    "prijs": 115.99,
+    "btwTarief": 21,
+    "stock": 14,
+    "quantity": 0,
+    "categorie": "component",
+    "kleur": ""
+  },
+  {
+    "cardId": 14,
+    "titel": "Rock Assistant casing black",
+    "omschrijving": "The Rock Assistant v2 casing in clean matte black",
+    "afbeelding": "/src/assets/images/bovenkant_black.png",
+    "prijs": 25.99,
+    "btwTarief": 21,
+    "stock": 14,
+    "quantity": 0,
+    "categorie": "component",
+    "kleur": "zwart"
   }
 ]
-}

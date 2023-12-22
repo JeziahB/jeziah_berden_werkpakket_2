@@ -1,15 +1,19 @@
 import { defineStore } from 'pinia';
 import productenData from '@/assets/product.json';
 
-export const useProductenStore = defineStore({
-  id: 'producten',
+export const useProductenStore = defineStore( 'products',{
+  // id: 'producten',
   state: () => ({
-    producten: [],
+    producten: productenData,
     winkelwagen: [],
+    selectedFilters: {
+      categorie: null,
+      kleur: null,
+    },
   }),
   getters: {
     getProductById: (state) => (cardId) => {
-      return state.producten.find((product) => product.cardId === cardId);
+      return state.producten.find((product) => product.cardId == cardId) || null;
     },
     getCartTotal: (state) => {
       return state.winkelwagen.reduce((total, product) => total + product.quantity, 0);
@@ -17,10 +21,32 @@ export const useProductenStore = defineStore({
     getCartTotalPrice: (state) => {
       return state.winkelwagen.reduce((total, product) => total + product.prijs * product.quantity, 0);
     },
+    getFilteredProducts: (state) => {
+      let filteredProducts = state.producten;
+
+      // Filter op categorie
+      if (state.selectedFilters.categorie) {
+        filteredProducts = filteredProducts.filter(
+            (product) => product.categorie === state.selectedFilters.categorie
+        );
+      }
+
+      // Filter op kleur
+      if (state.selectedFilters.kleur) {
+        filteredProducts = filteredProducts.filter(
+            (product) => product.kleur === state.selectedFilters.kleur
+        );
+      }
+
+      return filteredProducts;
+    },
   },
   actions: {
-    setProducten() {
-      this.producten = productenData.producten;
+    // setProducten() {
+    //   this.producten = productenData.producten;
+    // },
+    toggleFilter(filterType, value = null) {
+      this.selectedFilters[filterType] = value;
     },
 
     decreaseStock(cardId) {
@@ -34,10 +60,13 @@ export const useProductenStore = defineStore({
 
       if (cartProduct) {
         // Als het product al in de winkelwagen zit, verhoog de hoeveelheid
+        console.log("quan omhoog")
         cartProduct.quantity += 1;
       } else {
         // Als het product nog niet in de winkelwagen zit, voeg het toe
-        this.winkelwagen.push({ ...product, quantity: 1 });
+        console.log("product toegevoegd")
+        this.winkelwagen.push({cartProduct});
+
       }
     },
     removeFromCart(cardId) {
@@ -53,19 +82,8 @@ export const useProductenStore = defineStore({
         }
       }
     },
-    CountQuantity(cardId) {
-      const product = this.getProductById(cardId);
-      if (product && product.quantity >= 0) {
-        product.quantity += 1;
-      }
-    },
-    decreaseQuantity(cardId) {
-      const product = this.getProductById(cardId);
-      if (product && product.quantity > 0) {
-        product.quantity -= 1;
-      }
-    },
-  },
+
+  }
 });
 export const useAuthStore = defineStore('auth', {
   state: () => ({
@@ -83,3 +101,6 @@ export const useAuthStore = defineStore('auth', {
     },
   },
 });
+
+
+

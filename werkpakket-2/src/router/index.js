@@ -4,12 +4,18 @@ import cartView from "../views/cartView.vue";
 import productView from "../views/productView.vue";
 import detailView from "../views/detailView.vue";
 import loginView from "../views/loginView.vue";
+import checkoutView from "../views/checkoutView.vue";
+import bevestigingView from "../views/bevestigingView.vue";
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
             path: '/',
+            component: homeView
+        },
+        {
+            path: '/home',
             component: homeView
         },
         {
@@ -32,9 +38,17 @@ const router = createRouter({
           component: loginView
         },
         {
-            path: '/product/:price',
-            name: "productPrice",
-            component: productView
+          path: '/checkout' ,
+            component: checkoutView
+        },
+        {
+          path: '/bevestiging',
+            component: bevestigingView
+        },
+        {
+            // path: '/product/:price',
+            // name: "productPrice",
+            // component: productView
         },
     ]
 })

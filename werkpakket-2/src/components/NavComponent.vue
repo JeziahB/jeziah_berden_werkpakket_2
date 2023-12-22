@@ -11,10 +11,10 @@ export default {
           path: "/product",
           name: "product"
         },
-        {
-          path: "/detail",
-          name: "detail"
-        },
+        // {
+        //   path: "/detail",
+        //   name: "detail"
+        // },
         // {
         //   path: "/cart",
         //   name: "cart"
@@ -26,7 +26,6 @@ export default {
       ]
     }
   },
-
 }
 </script>
 

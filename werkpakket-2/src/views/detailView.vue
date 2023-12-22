@@ -46,7 +46,9 @@ export default {
     <h2>Product Details</h2>
 
     <div v-if="opvraagProduct">
+      <div class="imgsmaller">
       <img :src="opvraagProduct.afbeelding" alt="Product afbeelding" />
+      </div>
       <h3>{{ opvraagProduct.titel }}</h3>
       <p>{{ opvraagProduct.omschrijving }}</p>
       <p>Prijs: €{{ opvraagProduct.prijs }}</p>
